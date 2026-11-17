@@ -1,0 +1,3 @@
+cd /Users/jeffreythomas/Desktop/studyMaterial/AlgoRhythm
+source .venv/bin/activate
+python backend/main.py

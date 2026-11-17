@@ -1,0 +1,62 @@
+{
+  "split_strategy": "Temporal Split (Earliest 80% interactions -> Train, Latest 20% -> Test per user)",
+  "benchmark_date": "2026-11-17 22:11:41",
+  "configurations": {
+    "factors_20": {
+      "precision@10": 0.15383064516129033,
+      "recall@10": 0.007197417505260371,
+      "ndcg@10": 0.15548381069327888,
+      "map@10": 0.08245409039511861,
+      "evaluated_users": 992,
+      "training_time_seconds": 2.94,
+      "evaluation_time_seconds": 0.1,
+      "factors": 20
+    },
+    "factors_50": {
+      "precision@10": 0.16028225806451613,
+      "recall@10": 0.008695787654353346,
+      "ndcg@10": 0.1658545683727663,
+      "map@10": 0.08472006779862483,
+      "evaluated_users": 992,
+      "training_time_seconds": 4.8,
+      "evaluation_time_seconds": 0.1,
+      "factors": 50
+    },
+    "factors_100": {
+      "precision@10": 0.18870967741935485,
+      "recall@10": 0.010270315250137612,
+      "ndcg@10": 0.19539401510530172,
+      "map@10": 0.10590901817716333,
+      "evaluated_users": 992,
+      "training_time_seconds": 17.71,
+      "evaluation_time_seconds": 0.1,
+      "factors": 100
+    }
+  },
+  "comparison_summary": [
+    {
+      "factors": 20,
+      "precision_at_10": 0.1538,
+      "recall_at_10": 0.0072,
+      "ndcg_at_10": 0.1555,
+      "map_at_10": 0.0825,
+      "training_time": 2.94
+    },
+    {
+      "factors": 50,
+      "precision_at_10": 0.1603,
+      "recall_at_10": 0.0087,
+      "ndcg_at_10": 0.1659,
+      "map_at_10": 0.0847,
+      "training_time": 4.8
+    },
+    {
+      "factors": 100,
+      "precision_at_10": 0.1887,
+      "recall_at_10": 0.0103,
+      "ndcg_at_10": 0.1954,
+      "map_at_10": 0.1059,
+      "training_time": 17.71
+    }
+  ]
+}
